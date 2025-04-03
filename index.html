@@ -1,607 +1,743 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mon Portfolio</title>
+	<link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
-    
-    <!-- Header Navigation -->
-    <header>
-        <a href="#accueil" class="logo">Ngawang:</a>
-        <nav id="navbar">
-            <ul>
-                <li><a href="#accueil" class="active">Accueil</a></li>
-                <li><a href="#a-propos">Profil</a></li>
-                <li><a href="#parcours">Parcours</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#veille">Veille Technologies</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="burger" id="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="accueil">
-        <div class="hero-content">
-            <h1>Bonjour, Bienvenue sur mon Portfolio</h1>
-            <a href="#contact" class="cta-btn">Contactez-moi</a>
-        </div>
-        <div class="scroll-indicator">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path d="M12 21l-12-18h24z"/>
-            </svg>
-        </div>
-    </section>
+	<!-- Header Navigation -->
+	<header>
+		<a href="#accueil" class="logo">Ngawang</a>
+		<nav id="navbar">
+			<ul>
+				<li><a href="#accueil" class="active">Accueil</a></li>
+				<li><a href="#a-propos">Profil</a></li>
+				<li><a href="#parcours">Parcours</a></li>
+				<li><a href="#projets">Projets</a></li>
+				<li><a href="#competences">Compétences</a></li>
+				<li><a href="#veille">Veille Technologies</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="burger" id="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</header>
 
-    <!-- À propos Section -->
-    <section id="a-propos">
-        <h2>À Propos de Moi</h2>
-        <div class="about-content">
-            <div class="about-text reveal-element">
-                <p>Bonjour, je m'appelle <strong>Ngawang</strong> et je suis passionné par le développement informatique. 👋</p>
-                
-                <h3>Formation</h3>
-                <p>Je poursuis actuellement ma deuxième année de <strong>BTS Services Informatiques aux Organisations (SIO)</strong> au <strong>Lycée Léonard de Vinci</strong> de Melun, avec une spécialisation en <strong>Solutions Logicielles et Applications Métier (SLAM)</strong>. Cette option m'a permis d'acquérir des compétences solides en conception et développement d'applications.</p>
-                
-                <h3>Objectifs Professionnels</h3>
-                <p>Pour la rentrée de septembre 2024, j'ai été admis en <strong>Licence Professionnelle Projet Web</strong> à la <strong>Sorbonne</strong> (CFA des Sciences, Paris 5e), formation que je souhaite réaliser en alternance.</p>
-                
-                <a href="#contact" class="cta-btn">Télécharger mon CV</a>
-            </div>
-            <div class="about-image reveal-element">
-                <img src="/api/placeholder/300/300" alt="Photo de profil">
-            </div>
-        </div>
-    </section>
+	<!-- Hero Section -->
+	<section id="accueil">
+		<div class="hero-content">
+			<h1>Bonjour, Bienvenue sur mon Portfolio</h1>
+			<a href="#contact" class="cta-btn">Contactez-moi</a>
+		</div>
+		<div class="scroll-indicator">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+				<path d="M12 21l-12-18h24z" />
+			</svg>
+		</div>
+	</section>
 
-    <!-- Parcours Section -->
-    <section id="parcours">
-        <h2>Expériences Professionnelles</h2>
-        <div class="timeline">
-            <div class="timeline-item reveal-element">
-                <div class="timeline-content">
-                    <span class="timeline-date">2019 - 2020</span>
-                    <h3>Etablissements Bariot Et Ciel <br><strong>( 6 semaines )</strong></h3>
-                    <p>Stage Technicien d'usinage</p>
-                    <ul style="list-style-type: disc; padding-left: 20px; margin-top: 10px;">
-                        <li>Lecture et interprétation des plans techniques et des schémas</li>
-                        <li>Réglage et programmation des machines-outils (tour, fraiseuse, etc.)</li>
-                    </ul>
-                   
-                </div>
+	<!-- À propos Section -->
+	<section id="a-propos">
+		<h2>À Propos de Moi</h2>
+		<div class="about-content">
+			<div class="about-text reveal-element">
+				<p>Bonjour, je m'appelle <strong>Ngawang</strong> et je suis passionné par le développement
+					informatique. 👋</p>
 
-            </div>
-            <div class="timeline-item reveal-element">
+				<h3>Formation</h3>
+				<p>Je poursuis actuellement ma deuxième année de <strong>BTS Services Informatiques aux
+						Organisations (SIO)</strong> au <strong>Lycée Léonard de Vinci</strong> de
+					Melun, avec une spécialisation en <strong>Solutions Logicielles et Applications
+						Métier (SLAM)</strong>. Cette option m'a permis d'acquérir des compétences
+					solides en conception et développement d'applications.</p>
 
-                <div class="timeline-content">
-                    <span class="timeline-date">2020 - 2021</span>
-                    <h3>BAMA <br><strong>( 6 semaines )</strong></h3>
-                    <p>Stage Technicien d'usinage</p>
-                    <ul style="list-style-type: disc; padding-left: 20px; margin-top: 10px;">
-                        <li>Lecture et interprétation des plans techniques et des schémas</li>
-                        <li>Réglage et programmation des machines-outils (tour, fraiseuse, etc.)</li>
-                    </ul>
-                   
-                </div>
+				<h3>Objectifs Professionnels</h3>
+				<p>Pour la rentrée de septembre 2024, j'ai été admis en <strong>Licence Professionnelle
+						Projet Web</strong> à la <strong>Sorbonne</strong> (CFA des Sciences, Paris
+					5e), formation que je souhaite réaliser en alternance.</p>
 
-            </div>
-            <div class="timeline-item reveal-element">
+				<a href="#contact" class="cta-btn">Télécharger mon CV</a>
+			</div>
+			<div class="about-image reveal-element">
+				<img src="/api/placeholder/300/300" alt="Photo de profil">
+			</div>
+		</div>
+	</section>
 
-                <div class="timeline-content">
-                    <span class="timeline-date">Du 21/05/24 - 28/06/24</span>
-                    <h3>Association Augustine au Shell Eco-Marathon <br><strong>( 6 semaines )</strong></h3>
-                    <p> Stage création d'un site web statique </p>
-                    <ul style="list-style-type: disc; padding-left: 20px; margin-top: 10px;">
-                        <li>Création d'un site web statique à l'aide de Pelican et du format Markdown.</li>
-                        <li>Hébergement sur GitHub</li>
-                        <li>Création d'un fond de page web avec HTML, CSS et JavaScript</li>
-                    </ul>
-                    <a href="#" class="cta-btn" style="margin-top: 15px; font-size: 0.9rem; padding: 0.5rem 1rem;">Rapport de stage</a>
-                </div>
+	<!-- Parcours Section -->
+	<section id="parcours">
+		<h2>Expériences Professionnelles</h2>
+		<div class="timeline">
+			<div class="timeline-item reveal-element">
+				<div class="timeline-content">
+					<span class="timeline-date">2019 - 2020</span>
+					<h3>Etablissements Bariot Et Ciel <br><strong>( 6 semaines )</strong></h3>
+					<p>Stage Technicien d'usinage</p>
+					<ul style="list-style-type: disc; padding-left: 20px; margin-top: 10px;">
+						<li>Lecture et interprétation des plans techniques et des schémas</li>
+						<li>Réglage et programmation des machines-outils (tour, fraiseuse, etc.)</li>
+					</ul>
 
-            </div>
-            <div class="timeline-item reveal-element">
+				</div>
 
-                <div class="timeline-content">
-                    <span class="timeline-date">Du 06/01/25 au 14/02/25</span>
-                    <h3>CEREEP - Ecotron IDF CNRS <br><strong>( 6 semaines )</strong></h3>
-                    <p>Stage développeur web et Gestion des Réseaux Informatiques</p>
-                    <ul style="list-style-type: disc; padding-left: 20px; margin-top: 10px;">
-                        <li>Réception de fichiers du serveur vers votre ordinateur local.</li>
-                        <li>L'utilisation de Docker dans des pipelines CI/CD pour automatiser les tests, la construction et le déploiement des applications.</li>
-                        <li>Hébergement sur serveur</li>
-                    </ul>
-                    <a href="#" class="cta-btn" style="margin-top: 15px; font-size: 0.9rem; padding: 0.5rem 1rem;">Rapport de stage</a>
-                </div>
+			</div>
+			<div class="timeline-item reveal-element">
 
-            </div>
-        </div>
-    </section>
+				<div class="timeline-content">
+					<span class="timeline-date">2020 - 2021</span>
+					<h3>BAMA <br><strong>( 6 semaines )</strong></h3>
+					<p>Stage Technicien d'usinage</p>
+					<ul style="list-style-type: disc; padding-left: 20px; margin-top: 10px;">
+						<li>Lecture et interprétation des plans techniques et des schémas</li>
+						<li>Réglage et programmation des machines-outils (tour, fraiseuse, etc.)</li>
+					</ul>
 
-    <!-- Projets Section -->
-    <section id="projets">
-        <h2>Mes Projets</h2>
-        <div class="projects-grid">
-            <a href="https://github.com/ngawangtendor/geoworld" class="project-card reveal-element" style="text-decoration: none; color: inherit; cursor: pointer;">
-                <div class="project-image">
-                    <img src="image/geoworld.png" alt="GEOWORLD">
-                </div>
-                <div class="project-info" style="text-align: center;">
-                    <h3>GEOWORLD</h3>
-                </div>
-            </a>
-            <a href="https://github.com/ngawangtendor/stage-projet-ecotron-octopus" class="project-card reveal-element" style="text-decoration: none; color: inherit; cursor: pointer;">
-                <div class="project-image">
-                    <img src="image/octopus.jpg" alt="OCTOPUS">
-                </div>
-                <div class="project-info" style="text-align: center;">
-                    <h3>OCTOPUS</h3>
-                </div>
-            </a>
-            <a href="https://github.com/ngawangtendor/Kotlin-Aventure_Split-1/tree/master/KotlinAventureStart25-master/src" class="project-card reveal-element" style="text-decoration: none; color: inherit; cursor: pointer;">
-                <div class="project-image">
-                    <img src="image/PAP-Parents-vacances-aventures.jpg" alt="KOTLINAVENTURE">
-                </div>
-                <div class="project-info" style="text-align: center;">
-                    <h3>KOTLINAVENTURE</h3>
-                </div>
-            </a>
-            <a href="https://github.com/ngawangtendor/projet-sushi" class="project-card reveal-element" style="text-decoration: none; color: inherit; cursor: pointer;">
-                <div class="project-image">
-                    <img src="image/Susi-App.png" alt="Happy Sushi">
-                </div>
-                <div class="project-info" style="text-align: center;">
-                    <h3>SUSHI</h3>
-                </div>
-            </a>
-            <a href="https://github.com/ngawangtendor/-savon-app-front-end" class="project-card reveal-element" style="text-decoration: none; color: inherit; cursor: pointer;">
-                <div class="project-image">
-                    <img src="image/savon.jpg" alt="Happy Sushi">
-                </div>
-                <div class="project-info" style="text-align: center;">
-                    <h3>SAVON-API</h3>
-                </div>
-            </a>
-            <a href="https://github.com/ngawangtendor/augustineNAWA" class="project-card reveal-element" style="text-decoration: none; color: inherit; cursor: pointer;">
-                <div class="project-image">
-                    <img src="image/tournesol.jpg" alt="Happy Sushi">
-                </div>
-                <div class="project-info" style="text-align: center;">
-                    <h3>AUGUSTINE</h3>
-                </div>
-            </a>
-        </div>
-    </section>
+				</div>
 
-    <!-- Compétences Section -->
-    <section id="competences">
-        <h2>Mes Compétences</h2>
-        <div class="skills-container">
-            <div class="skills-category">
-                <h3>Développement Front-end</h3>
-                <div class="skill-item reveal-element" data-skill="90">
-                    <div class="skill-info">
-                        <span>HTML5 / CSS3</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress"></div>
-                    </div>
-                </div>
-                <div class="skill-item reveal-element" data-skill="85">
-                    <div class="skill-info">
-                        <span>JavaScript</span>
-                        <span>85%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress"></div>
-                    </div>
-                </div>
-                <div class="skill-item reveal-element" data-skill="75">
-                    <div class="skill-info">
-                        <span>React</span>
-                        <span>75%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress"></div>
-                    </div>
-                </div>
-                <div class="skill-item reveal-element" data-skill="70">
-                    <div class="skill-info">
-                        <span>Vue.js</span>
-                        <span>70%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="skills-category">
-                <h3>Développement Back-end</h3>
-                <div class="skill-item reveal-element" data-skill="80">
-                    <div class="skill-info">
-                        <span>Node.js</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress"></div>
-                    </div>
-                </div>
-                <div class="skill-item reveal-element" data-skill="75">
-                    <div class="skill-info">
-                        <span>Express</span>
-                        <span>75%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress"></div>
-                    </div>
-                </div>
-                <div class="skill-item reveal-element" data-skill="70">
-                    <div class="skill-info">
-                        <span>MongoDB</span>
-                        <span>70%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress"></div>
-                    </div>
-                </div>
-                <div class="skill-item reveal-element" data-skill="65">
-                    <div class="skill-info">
-                        <span>PHP / MySQL</span>
-                        <span>65%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="skills-category">
-                <h3>Outils & Technologies</h3>
-                <div class="skill-item reveal-element" data-skill="85">
-                    <div class="skill-info">
-                        <span>Git / GitHub</span>
-                        <span>85%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress"></div>
-                    </div>
-                </div>
-                <div class="skill-item reveal-element" data-skill="80">
-                    <div class="skill-info">
-                        <span>Responsive Design</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress"></div>
-                    </div>
-                </div>
-                <div class="skill-item reveal-element" data-skill="75">
-                    <div class="skill-info">
-                        <span>Webpack / Babel</span>
-                        <span>75%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress"></div>
-                    </div>
-                </div>
-                <div class="skill-item reveal-element" data-skill="70">
-                    <div class="skill-info">
-                        <span>Docker</span>
-                        <span>70%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+			</div>
+			<div class="timeline-item reveal-element">
 
-    <!-- Veille Technologique Section -->
-    <section id="veille">
-        <h2>Veille Technologique</h2>
-        <div class="veille-tech">
-            <div class="veille-header reveal-element">
-                <h3>Qu'est-ce que la veille technologique ?</h3>
-                <p>La veille technologique est un processus d'observation et d'analyse des innovations, évolutions et tendances technologiques dans un domaine spécifique. Elle permet de rester à jour avec les dernières avancées et d'anticiper les changements à venir.</p>
-            </div>
-            
-            <div class="veille-header reveal-element" style="margin-top: 30px;">
-                <h3>À quoi sert la veille technologique ?</h3>
-                <p>La veille technologique permet aux professionnels et aux entreprises de maintenir leur compétitivité en identifiant les opportunités d'innovation, en anticipant les évolutions du marché, en optimisant les prises de décision stratégiques et en évitant les risques d'obsolescence technique. C'est un outil essentiel pour guider le développement de produits et services pertinents.</p>
-            </div>
-            
-            <div class="veille-process reveal-element" style="margin: 30px 0; background-color: var(--accent-color); padding: 30px; border-radius: 10px;">
-                <h4 style="color: var(--highlight-color); margin-bottom: 20px; text-align: center;">Pourquoi avoir choisi l'Hypershell X ?</h4>
-                
-                <p style="margin-bottom: 20px; line-height: 1.8;">J'ai choisi de faire ma veille technologique sur l'Hypershell X car ce véhicule électrique représente parfaitement la convergence entre innovation technologique, mobilité durable et expérience utilisateur repensée. Dans un contexte où la transition écologique devient cruciale, les solutions de mobilité alternative comme l'Hypershell X méritent une attention particulière.</p>
-                
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 25px;">
-                    <div style="background-color: var(--primary-color); border-radius: 8px; padding: 20px;">
-                        <h5 style="color: var(--highlight-color); margin-bottom: 10px;">Innovation disruptive</h5>
-                        <p>Contrairement à d'autres vélos électriques classiques, l'Hypershell X intègre des technologies habituellement réservées aux véhicules haut de gamme. Son approche novatrice le distingue des autres solutions de mobilité électrique.</p>
-                    </div>
-                    <div style="background-color: var(--primary-color); border-radius: 8px; padding: 20px;">
-                        <h5 style="color: var(--highlight-color); margin-bottom: 10px;">Impact potentiel</h5>
-                        <p>Son autonomie exceptionnelle et sa polyvalence pourraient transformer la mobilité urbaine et péri-urbaine, offrant une alternative crédible aux transports motorisés traditionnels pour un large éventail d'usages.</p>
-                    </div>
-                    <div style="background-color: var(--primary-color); border-radius: 8px; padding: 20px;">
-                        <h5 style="color: var(--highlight-color); margin-bottom: 10px;">Convergence technologique</h5>
-                        <p>L'Hypershell X représente un excellent cas d'étude de l'intégration de différentes technologies (batterie avancée, moteur haute performance, connectivité, design) pour créer un produit cohérent et innovant.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="veille-focus reveal-element" style="margin: 50px 0 30px; text-align: center;">
-                <h3 style="color: var(--highlight-color); font-size: 2rem; margin-bottom: 15px;">Focus actuel : Hypershell X</h3>
-                <div class="hypershell-badges">
-                    <span class="project-tag">Exosquelette Innovant</span>
-                    <span class="project-tag">Robotique Portable</span>
-                    <span class="project-tag">Intelligence Artificielle</span>
-                    <span class="project-tag">Mars 2023 - Présent</span>
-                </div>
-            </div>
-            
-            <div class="veille-content">
-                <div class="hypershell-intro reveal-element">
-                    <p>L'Hypershell X représente une révolution dans le domaine des exosquelettes grand public. Ce "PowerSuit" nouvelle génération combine robotique avancée et intelligence artificielle pour amplifier les capacités humaines naturelles, offrant une assistance au mouvement sans précédent dans un format étonnamment compact et léger.</p>
-                </div>
-                
-                <div class="hypershell-video reveal-element" style="margin: 30px 0; position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background-color: #1a1a2e; border-radius: 10px;">
-                    <!-- Placeholder pour la vidéo -->
-                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #16213e; color: white; border-radius: 10px;">
-                        <svg style="width: 60px; height: 60px; opacity: 0.8; margin-bottom: 15px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                        </svg>
-                        <p style="font-size: 16px; margin: 0;">Vidéo de présentation Hypershell X</p>
-                        <p style="font-size: 12px; margin: 5px 0 0 0; opacity: 0.7;">(Placé ici en tant que placeholder - remplacez par la vidéo réelle)</p>
-                    </div>
-                </div>
-                
-                <div class="hypershell-innovation reveal-element" style="margin: 40px 0; background-color: var(--accent-color); padding: 30px; border-radius: 10px;">
-                    <h4 style="color: var(--highlight-color); margin-bottom: 20px; text-align: center;">Une technologie révolutionnaire</h4>
-                    
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0;">
-                        <div style="background-color: var(--primary-color); border-radius: 8px; padding: 20px; display: flex; flex-direction: column; align-items: center; text-align: center;">
-                            <div style="font-size: 3rem; font-weight: bold; color: var(--highlight-color); margin-bottom: 10px;">40%</div>
-                            <h5 style="margin-bottom: 10px;">Amélioration de la force des jambes</h5>
-                            <p>Amplification significative de la puissance musculaire naturelle pour repousser vos limites physiques.</p>
-                        </div>
-                        <div style="background-color: var(--primary-color); border-radius: 8px; padding: 20px; display: flex; flex-direction: column; align-items: center; text-align: center;">
-                            <div style="font-size: 3rem; font-weight: bold; color: var(--highlight-color); margin-bottom: 10px;">30%</div>
-                            <h5 style="margin-bottom: 10px;">Réduction de l'effort physique</h5>
-                            <p>Diminution significative de la fatigue, permettant des performances accrues sur de plus longues périodes.</p>
-                        </div>
-                        <div style="background-color: var(--primary-color); border-radius: 8px; padding: 20px; display: flex; flex-direction: column; align-items: center; text-align: center;">
-                            <div style="font-size: 3rem; font-weight: bold; color: var(--highlight-color); margin-bottom: 10px;">1.8kg</div>
-                            <h5 style="margin-bottom: 10px;">Ultra-léger et portable</h5>
-                            <p>Un design compact qui offre une puissance exceptionnelle dans un format incroyablement léger et ergonomique.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="hypershell-gallery reveal-element">
-                    <h4 style="margin: 20px 0; color: var(--highlight-color); text-align: center;">Caractéristiques techniques innovantes</h4>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; margin-bottom: 30px;">
-                        <div class="hypershell-feature" style="background-color: var(--accent-color); border-radius: 10px; overflow: hidden;">
-                            <div style="height: 180px; background-color: #264470; display: flex; align-items: center; justify-content: center;">
-                                <img src="/api/placeholder/300/180" alt="Système moteur exosquelette M-One">
-                            </div>
-                            <div style="padding: 15px;">
-                                <h5>Système moteur M-One</h5>
-                                <p>Moteur de pointe délivrant 800W de puissance et 32 N·m de couple, avec un temps de réponse ultra-rapide de 2ms pour une assistance instantanée à chaque mouvement.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="hypershell-feature" style="background-color: var(--accent-color); border-radius: 10px; overflow: hidden;">
-                            <div style="height: 180px; background-color: #264470; display: flex; align-items: center; justify-content: center;">
-                                <img src="/api/placeholder/300/180" alt="SoftSuit AeroFlex">
-                            </div>
-                            <div style="padding: 15px;">
-                                <h5>SoftSuit AeroFlex</h5>
-                                <p>Structure flexible composée de 10 couches de matériaux composites dans un rembourrage de 4mm d'épaisseur, offrant une liberté de mouvement à 300° pour s'adapter parfaitement à tous les types de mouvements.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="hypershell-feature" style="background-color: var(--accent-color); border-radius: 10px; overflow: hidden;">
-                            <div style="height: 180px; background-color: #264470; display: flex; align-items: center; justify-content: center;">
-                                <img src="/api/placeholder/300/180" alt="IA MotionEngine">
-                            </div>
-                            <div style="padding: 15px;">
-                                <h5>IA MotionEngine</h5>
-                                <p>Intelligence artificielle adaptative avec 10 états différents qui détecte vos intentions en temps réel (0.03s de latence) et ajuste l'assistance pour s'adapter parfaitement à votre style de mouvement personnel.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="hypershell-details reveal-element">
-                    <div style="display: flex; flex-wrap: wrap; gap: 30px; margin: 20px 0;">
-                        <div style="flex: 1; min-width: 300px;">
-                            <h4 style="color: var(--highlight-color); margin-bottom: 15px;">Spécifications techniques</h4>
-                            <ul style="list-style: none; padding: 0;">
-                                <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-                                    <span style="position: absolute; left: 0; color: var(--highlight-color);">•</span>
-                                    <strong>Durabilité :</strong> 2000 km d'utilisation
-                                </li>
-                                <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-                                    <span style="position: absolute; left: 0; color: var(--highlight-color);">•</span>
-                                    <strong>Résistance :</strong> IP54 (résistant à la poussière et à l'eau)
-                                </li>
-                                <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-                                    <span style="position: absolute; left: 0; color: var(--highlight-color);">•</span>
-                                    <strong>Température de fonctionnement :</strong> -20°C à 60°C
-                                </li>
-                                <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-                                    <span style="position: absolute; left: 0; color: var(--highlight-color);">•</span>
-                                    <strong>Autonomie :</strong> 17.5 km par charge
-                                </li>
-                                <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-                                    <span style="position: absolute; left: 0; color: var(--highlight-color);">•</span>
-                                    <strong>Batterie :</strong> 400g, charge rapide (0 à 50% en 35 min)
-                                </li>
-                                <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-                                    <span style="position: absolute; left: 0; color: var(--highlight-color);">•</span>
-                                    <strong>Puissance :</strong> 800W, couple de 32 N·m
-                                </li>
-                                <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-                                    <span style="position: absolute; left: 0; color: var(--highlight-color);">•</span>
-                                    <strong>Poids total :</strong> 1.8 kg (batterie incluse)
-                                </li>
-                            </ul>
-                        </div>
-                        <div style="flex: 1; min-width: 300px;">
-                            <h4 style="color: var(--highlight-color); margin-bottom: 15px;">Applications et cas d'usage</h4>
-                            <ul style="list-style: none; padding: 0;">
-                                <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-                                    <span style="position: absolute; left: 0; color: var(--highlight-color);">•</span>
-                                    <strong>Exploration nature :</strong> Boost de 40% de la force des jambes pour explorer jungles, déserts et montagnes
-                                </li>
-                                <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-                                    <span style="position: absolute; left: 0; color: var(--highlight-color);">•</span>
-                                    <strong>Photographie professionnelle :</strong> Compensation jusqu'à 30kg d'équipement lourd
-                                </li>
-                                <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-                                    <span style="position: absolute; left: 0; color: var(--highlight-color);">•</span>
-                                    <strong>Randonnée :</strong> Réduction de l'effort physique de 30% pour franchir des distances plus importantes
-                                </li>
-                                <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-                                    <span style="position: absolute; left: 0; color: var(--highlight-color);">•</span>
-                                    <strong>Sports :</strong> Amélioration des performances dans diverses activités physiques
-                                </li>
-                                <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-                                    <span style="position: absolute; left: 0; color: var(--highlight-color);">•</span>
-                                    <strong>Vie quotidienne :</strong> Assistance pour la marche, le travail et les loisirs
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="hypershell-impact reveal-element" style="margin: 40px 0; background-color: var(--accent-color); padding: 30px; border-radius: 10px;">
-                    <h4 style="color: var(--highlight-color); margin-bottom: 20px; text-align: center;">Impact et perspectives d'avenir</h4>
-                    
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
-                        <div style="background-color: var(--primary-color); border-radius: 8px; padding: 20px;">
-                            <h5 style="color: var(--highlight-color); margin-bottom: 10px;">Amplification humaine</h5>
-                            <p>L'Hypershell X représente l'aube d'une nouvelle ère où la technologie portable ne se contente plus de mesurer nos capacités, mais les amplifie activement, repoussant les limites de ce que le corps humain peut accomplir.</p>
-                        </div>
-                        <div style="background-color: var(--primary-color); border-radius: 8px; padding: 20px;">
-                            <h5 style="color: var(--highlight-color); margin-bottom: 10px;">Démocratisation des exosquelettes</h5>
-                            <p>Autrefois limités aux applications militaires ou médicales coûteuses, les exosquelettes deviennent désormais accessibles au grand public, ouvrant la voie à de nouvelles possibilités d'utilisation quotidienne.</p>
-                        </div>
-                        <div style="background-color: var(--primary-color); border-radius: 8px; padding: 20px;">
-                            <h5 style="color: var(--highlight-color); margin-bottom: 10px;">Convergence technologique</h5>
-                            <p>Ce PowerSuit illustre parfaitement la fusion entre intelligence artificielle, robotique miniaturisée et science des matériaux dans un produit unifié qui s'adapte intimement au corps humain.</p>
-                        </div>
-                    </div>
-                    
-                    <div style="margin-top: 30px; text-align: center;">
-                        <p>Cette technologie ouvre la voie à des innovations futures dans les domaines de l'assistance médicale, du sport de haute performance et de l'augmentation des capacités humaines dans des environnements extrêmes.</p>
-                    </div>
-                </div>
-                
-                <div class="hypershell-cta reveal-element" style="text-align: center; margin-top: 40px;">
-                    <a href="https://eu.hypershell.tech/fr-fr/products/hypershell-x" target="_blank" class="cta-btn">Découvrir l'Hypershell X</a>
-                </div>
-            </div>
-        </div>
-    </section>
+				<div class="timeline-content">
+					<span class="timeline-date">Du 21/05/24 - 28/06/24</span>
+					<h3>Association Augustine au Shell Eco-Marathon <br><strong>( 6 semaines )</strong>
+					</h3>
+					<p> Stage création d'un site web statique </p>
+					<ul style="list-style-type: disc; padding-left: 20px; margin-top: 10px;">
+						<li>Création d'un site web statique à l'aide de Pelican et du format Markdown.
+						</li>
+						<li>Hébergement sur GitHub</li>
+						<li>Création d'un fond de page web avec HTML, CSS et JavaScript</li>
+					</ul>
+					<a href="#" class="cta-btn"
+						style="margin-top: 15px; font-size: 0.9rem; padding: 0.5rem 1rem;">Rapport de
+						stage</a>
+				</div>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contactez-moi</h2>
-        <div class="contact-container">
-            <div class="contact-info reveal-element">
-                <h3>Informations de contact</h3>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                    </div>
-                    <span>email@exemple.com</span>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                        </svg>
-                    </div>
-                    <span>+33 6 12 34 56 78</span>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                            <circle cx="12" cy="10" r="3"></circle>
-                        </svg>
-                    </div>
-                    <span>Paris, France</span>
-                </div>
-            </div>
-            <div class="contact-form reveal-element">
-                <h3>Envoyez-moi un message</h3>
-                <form id="contact-form">
-                    <div class="form-group">
-                        <label for="name">Nom</label>
-                        <input type="text" id="name" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Sujet</label>
-                        <input type="text" id="subject" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" class="form-control" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Envoyer</button>
-                </form>
-            </div>
-        </div>
-    </section>
+			</div>
+			<div class="timeline-item reveal-element">
 
-    <!-- Footer -->
-    <footer>
-        <div class="social-links">
-            <a href="#" class="social-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/>
-                </svg>
-            </a>
-            <a href="#" class="social-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/>
-                </svg>
-            </a>
-            <a href="#" class="social-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/>
-                </svg>
-            </a>
-            <a href="#" class="social-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                </svg>
-            </a>
-        </div>
-        <p>&copy; 2023 Mon Portfolio. Tous droits réservés.</p>
-    </footer>
-    <script src="javascript.js"></script>
+				<div class="timeline-content">
+					<span class="timeline-date">Du 06/01/25 au 14/02/25</span>
+					<h3>CEREEP - Ecotron IDF CNRS <br><strong>( 6 semaines )</strong></h3>
+					<p>Stage développeur web et Gestion des Réseaux Informatiques</p>
+					<ul style="list-style-type: disc; padding-left: 20px; margin-top: 10px;">
+						<li>Réception de fichiers du serveur vers votre ordinateur local.</li>
+						<li>L'utilisation de Docker dans des pipelines CI/CD pour automatiser les
+							tests, la construction et le déploiement des applications.</li>
+						<li>Hébergement sur serveur</li>
+					</ul>
+					<a href="#" class="cta-btn"
+						style="margin-top: 15px; font-size: 0.9rem; padding: 0.5rem 1rem;">Rapport de
+						stage</a>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Projets Section -->
+	<section id="projets">
+		<h2>Mes Projets</h2>
+		<div class="projects-grid">
+			<a href="https://github.com/ngawangtendor/geoworld" class="project-card reveal-element"
+				style="text-decoration: none; color: inherit; cursor: pointer;">
+				<div class="project-image">
+					<img src="image/geoworld.png" alt="GEOWORLD">
+				</div>
+				<div class="project-info" style="text-align: center;">
+					<h3>GEOWORLD</h3>
+				</div>
+			</a>
+			<a href="https://github.com/ngawangtendor/stage-projet-ecotron-octopus"
+				class="project-card reveal-element"
+				style="text-decoration: none; color: inherit; cursor: pointer;">
+				<div class="project-image">
+					<img src="image/octopus.jpg" alt="OCTOPUS">
+				</div>
+				<div class="project-info" style="text-align: center;">
+					<h3>OCTOPUS</h3>
+				</div>
+			</a>
+			<a href="https://github.com/ngawangtendor/Kotlin-Aventure_Split-1/tree/master/KotlinAventureStart25-master/src"
+				class="project-card reveal-element"
+				style="text-decoration: none; color: inherit; cursor: pointer;">
+				<div class="project-image">
+					<img src="image/PAP-Parents-vacances-aventures.jpg" alt="KOTLINAVENTURE">
+				</div>
+				<div class="project-info" style="text-align: center;">
+					<h3>KOTLINAVENTURE</h3>
+				</div>
+			</a>
+			<a href="https://github.com/ngawangtendor/projet-sushi" class="project-card reveal-element"
+				style="text-decoration: none; color: inherit; cursor: pointer;">
+				<div class="project-image">
+					<img src="image/Susi-App.png" alt="Happy Sushi">
+				</div>
+				<div class="project-info" style="text-align: center;">
+					<h3>SUSHI</h3>
+				</div>
+			</a>
+			<a href="https://github.com/ngawangtendor/-savon-app-front-end" class="project-card reveal-element"
+				style="text-decoration: none; color: inherit; cursor: pointer;">
+				<div class="project-image">
+					<img src="image/savon.jpg" alt="Happy Sushi">
+				</div>
+				<div class="project-info" style="text-align: center;">
+					<h3>SAVON-API</h3>
+				</div>
+			</a>
+			<a href="https://github.com/ngawangtendor/augustineNAWA" class="project-card reveal-element"
+				style="text-decoration: none; color: inherit; cursor: pointer;">
+				<div class="project-image">
+					<img src="image/tournesol.jpg" alt="Happy Sushi">
+				</div>
+				<div class="project-info" style="text-align: center;">
+					<h3>AUGUSTINE</h3>
+				</div>
+			</a>
+		</div>
+	</section>
+
+	<!-- Compétences Section -->
+	<!-- Compétences Section avec grille d'images -->
+	<section id="competences">
+		<h2>Mes Compétences</h2>
+
+		<div class="skills-grid">
+			<!-- JAVASCRIPT | TYPESCRIPT -->
+			<div class="skill-card reveal-element">
+				<div class="skill-header">
+					<img src="image/js.png" alt="JavaScript/TypeScript" class="skill-logo">
+					<h3>JAVASCRIPT | TYPESCRIPT</h3>
+				</div>
+				<ul class="skill-list">
+					<li>Programmation Orientée Objet (POO)</li>
+					<li>Canvas</li>
+					<li>Structure de contrôle</li>
+					<li>Fonctions fléchées</li>
+					<li>Angular</li>
+				</ul>
+			</div>
+
+			<!-- JAVA | KOTLIN -->
+			<div class="skill-card reveal-element">
+				<div class="skill-header">
+					<img src="image/kotlin.png" alt="Java/Kotlin" class="skill-logo">
+					<h3>KOTLIN</h3>
+				</div>
+				<ul class="skill-list">
+					<li>Programmation Orientée Objet (POO)</li>
+					<li>Structure de contrôle</li>
+					<li>Fonctions</li>
+					<li>Spring-boot</li>
+					<li>API-REST</li>
+				</ul>
+			</div>
+
+			<!-- PYTHON -->
+			<div class="skill-card reveal-element">
+				<div class="skill-header">
+					<img src="image/python.png" alt="Python" class="skill-logo">
+					<h3>PYTHON</h3>
+				</div>
+				<ul class="skill-list">
+					<li>Programmation Orientée Objet (POO)</li>
+					<li>Structure de contrôle</li>
+					<li>Fonctions</li>
+					<li>Flask</li>
+					<li>SQLALchemy (ORM)</li>
+					<li>API REST</li>
+
+				</ul>
+			</div>
+
+			<!-- PHP -->
+			<div class="skill-card reveal-element">
+				<div class="skill-header">
+					<img src="image/php.png" alt="PHP" class="skill-logo">
+					<h3>PHP</h3>
+				</div>
+				<ul class="skill-list">
+					<li>Programmation Orientée Objet (POO)</li>
+					<li>Fonctions</li>
+					<li>PDO</li>
+				</ul>
+			</div>
+
+			<!-- HTML | CSS -->
+			<div class="skill-card reveal-element">
+				<div class="skill-header">
+					<img src="image/html.png" alt="HTML/CSS" class="skill-logo">
+					<h3>HTML | CSS</h3>
+				</div>
+				<ul class="skill-list">
+					<li>Bootstrap</li>
+					<li>Flexbox</li>
+				</ul>
+			</div>
+
+			<!-- SQL -->
+			<div class="skill-card reveal-element">
+				<div class="skill-header">
+					<img src="image/sql.png" alt="SQL" class="skill-logo">
+					<h3>SQL</h3>
+				</div>
+				<ul class="skill-list">
+					<li>Manipulation de données</li>
+					<li>Installation et création d'une base de données, et gestion des utilisateurs.</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<!-- Veille Technologique Section -->
+	<section id="veille">
+		<h2>Veille Technologique</h2>
+		<div class="veille-tech">
+			<div class="veille-header reveal-element">
+				<h3>Qu'est-ce que la veille technologique ?</h3>
+				<p>La veille technologique est un processus d'observation et d'analyse des innovations,
+					évolutions et tendances technologiques dans un domaine spécifique. Elle permet de
+					rester à jour avec les dernières avancées et d'anticiper les changements à venir.</p>
+			</div>
+
+			<div class="veille-header reveal-element" style="margin-top: 30px;">
+				<h3>À quoi sert la veille technologique ?</h3>
+				<p>La veille technologique permet aux professionnels et aux entreprises de maintenir leur
+					compétitivité en identifiant les opportunités d'innovation, en anticipant les
+					évolutions du marché, en optimisant les prises de décision stratégiques et en évitant
+					les risques d'obsolescence technique. C'est un outil essentiel pour guider le
+					développement de produits et services pertinents.</p>
+			</div>
+
+			<div class="veille-process reveal-element"
+				style="margin: 30px 0; background-color: var(--accent-color); padding: 30px; border-radius: 10px;">
+				<h4 style="color: var(--highlight-color); margin-bottom: 20px; text-align: center;">Pourquoi
+					avoir choisi l'Hypershell X ?</h4>
+
+				<p style="margin-bottom: 20px; line-height: 1.8;">J'ai choisi de faire ma veille
+					technologique sur l'Hypershell X car ce véhicule électrique représente parfaitement
+					la convergence entre innovation technologique, mobilité durable et expérience
+					utilisateur repensée. Dans un contexte où la transition écologique devient cruciale,
+					les solutions de mobilité alternative comme l'Hypershell X méritent une attention
+					particulière.</p>
+
+				<div
+					style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 25px;">
+					<div
+						style="background-color: var(--primary-color); border-radius: 8px; padding: 20px;">
+						<h5 style="color: var(--highlight-color); margin-bottom: 10px;">Innovation
+							disruptive</h5>
+						<p>Contrairement à d'autres vélos électriques classiques, l'Hypershell X
+							intègre des technologies habituellement réservées aux véhicules haut de
+							gamme. Son approche novatrice le distingue des autres solutions de
+							mobilité électrique.</p>
+					</div>
+					<div
+						style="background-color: var(--primary-color); border-radius: 8px; padding: 20px;">
+						<h5 style="color: var(--highlight-color); margin-bottom: 10px;">Impact
+							potentiel</h5>
+						<p>Son autonomie exceptionnelle et sa polyvalence pourraient transformer la
+							mobilité urbaine et péri-urbaine, offrant une alternative crédible aux
+							transports motorisés traditionnels pour un large éventail d'usages.</p>
+					</div>
+					<div
+						style="background-color: var(--primary-color); border-radius: 8px; padding: 20px;">
+						<h5 style="color: var(--highlight-color); margin-bottom: 10px;">Convergence
+							technologique</h5>
+						<p>L'Hypershell X représente un excellent cas d'étude de l'intégration de
+							différentes technologies (batterie avancée, moteur haute performance,
+							connectivité, design) pour créer un produit cohérent et innovant.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="veille-focus reveal-element" style="margin: 50px 0 30px; text-align: center;">
+				<h3 style="color: var(--highlight-color); font-size: 2rem; margin-bottom: 15px;">Focus
+					actuel : Hypershell X</h3>
+				<div class="hypershell-badges">
+					<span class="project-tag">Exosquelette Innovant</span>
+					<span class="project-tag">Robotique Portable</span>
+					<span class="project-tag">Intelligence Artificielle</span>
+					<span class="project-tag">Mars 2023 - Présent</span>
+				</div>
+			</div>
+
+			<div class="veille-content">
+				<div class="hypershell-intro reveal-element">
+					<p>L'Hypershell X représente une révolution dans le domaine des exosquelettes grand
+						public. Ce "PowerSuit" nouvelle génération combine robotique avancée et
+						intelligence artificielle pour amplifier les capacités humaines naturelles,
+						offrant une assistance au mouvement sans précédent dans un format étonnamment
+						compact et léger.</p>
+				</div>
+
+				<div class="hypershell-video reveal-element"
+					style="margin: 30px 0; position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background-color: #1a1a2e; border-radius: 10px;">
+					<!-- Placeholder pour la vidéo -->
+					<div
+						style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #16213e; color: white; border-radius: 10px;">
+						<svg style="width: 60px; height: 60px; opacity: 0.8; margin-bottom: 15px;"
+							xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+							stroke="currentColor" stroke-width="2" stroke-linecap="round"
+							stroke-linejoin="round">
+							<polygon points="5 3 19 12 5 21 5 3"></polygon>
+						</svg>
+						<p style="font-size: 16px; margin: 0;">Vidéo de présentation Hypershell X</p>
+						<p style="font-size: 12px; margin: 5px 0 0 0; opacity: 0.7;">(Placé ici en
+							tant que placeholder - remplacez par la vidéo réelle)</p>
+					</div>
+				</div>
+
+				<div class="hypershell-innovation reveal-element"
+					style="margin: 40px 0; background-color: var(--accent-color); padding: 30px; border-radius: 10px;">
+					<h4 style="color: var(--highlight-color); margin-bottom: 20px; text-align: center;">
+						Une technologie révolutionnaire</h4>
+
+					<div
+						style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0;">
+						<div
+							style="background-color: var(--primary-color); border-radius: 8px; padding: 20px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+							<div
+								style="font-size: 3rem; font-weight: bold; color: var(--highlight-color); margin-bottom: 10px;">
+								40%</div>
+							<h5 style="margin-bottom: 10px;">Amélioration de la force des jambes
+							</h5>
+							<p>Amplification significative de la puissance musculaire naturelle
+								pour repousser vos limites physiques.</p>
+						</div>
+						<div
+							style="background-color: var(--primary-color); border-radius: 8px; padding: 20px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+							<div
+								style="font-size: 3rem; font-weight: bold; color: var(--highlight-color); margin-bottom: 10px;">
+								30%</div>
+							<h5 style="margin-bottom: 10px;">Réduction de l'effort physique</h5>
+							<p>Diminution significative de la fatigue, permettant des performances
+								accrues sur de plus longues périodes.</p>
+						</div>
+						<div
+							style="background-color: var(--primary-color); border-radius: 8px; padding: 20px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+							<div
+								style="font-size: 3rem; font-weight: bold; color: var(--highlight-color); margin-bottom: 10px;">
+								1.8kg</div>
+							<h5 style="margin-bottom: 10px;">Ultra-léger et portable</h5>
+							<p>Un design compact qui offre une puissance exceptionnelle dans un
+								format incroyablement léger et ergonomique.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="hypershell-gallery reveal-element">
+					<h4 style="margin: 20px 0; color: var(--highlight-color); text-align: center;">
+						Caractéristiques techniques innovantes</h4>
+					<div
+						style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; margin-bottom: 30px;">
+						<div class="hypershell-feature"
+							style="background-color: var(--accent-color); border-radius: 10px; overflow: hidden;">
+							<div
+								style="height: 180px; background-color: #264470; display: flex; align-items: center; justify-content: center;">
+								<img src="/api/placeholder/300/180"
+									alt="Système moteur exosquelette M-One">
+							</div>
+							<div style="padding: 15px;">
+								<h5>Système moteur M-One</h5>
+								<p>Moteur de pointe délivrant 800W de puissance et 32 N·m de
+									couple, avec un temps de réponse ultra-rapide de 2ms pour
+									une assistance instantanée à chaque mouvement.</p>
+							</div>
+						</div>
+
+						<div class="hypershell-feature"
+							style="background-color: var(--accent-color); border-radius: 10px; overflow: hidden;">
+							<div
+								style="height: 180px; background-color: #264470; display: flex; align-items: center; justify-content: center;">
+								<img src="/api/placeholder/300/180" alt="SoftSuit AeroFlex">
+							</div>
+							<div style="padding: 15px;">
+								<h5>SoftSuit AeroFlex</h5>
+								<p>Structure flexible composée de 10 couches de matériaux
+									composites dans un rembourrage de 4mm d'épaisseur,
+									offrant une liberté de mouvement à 300° pour s'adapter
+									parfaitement à tous les types de mouvements.</p>
+							</div>
+						</div>
+
+						<div class="hypershell-feature"
+							style="background-color: var(--accent-color); border-radius: 10px; overflow: hidden;">
+							<div
+								style="height: 180px; background-color: #264470; display: flex; align-items: center; justify-content: center;">
+								<img src="/api/placeholder/300/180" alt="IA MotionEngine">
+							</div>
+							<div style="padding: 15px;">
+								<h5>IA MotionEngine</h5>
+								<p>Intelligence artificielle adaptative avec 10 états différents
+									qui détecte vos intentions en temps réel (0.03s de
+									latence) et ajuste l'assistance pour s'adapter
+									parfaitement à votre style de mouvement personnel.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="hypershell-details reveal-element">
+					<div style="display: flex; flex-wrap: wrap; gap: 30px; margin: 20px 0;">
+						<div style="flex: 1; min-width: 300px;">
+							<h4 style="color: var(--highlight-color); margin-bottom: 15px;">
+								Spécifications techniques</h4>
+							<ul style="list-style: none; padding: 0;">
+								<li
+									style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+									<span
+										style="position: absolute; left: 0; color: var(--highlight-color);">•</span>
+									<strong>Durabilité :</strong> 2000 km d'utilisation
+								</li>
+								<li
+									style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+									<span
+										style="position: absolute; left: 0; color: var(--highlight-color);">•</span>
+									<strong>Résistance :</strong> IP54 (résistant à la
+									poussière et à l'eau)
+								</li>
+								<li
+									style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+									<span
+										style="position: absolute; left: 0; color: var(--highlight-color);">•</span>
+									<strong>Température de fonctionnement :</strong> -20°C à
+									60°C
+								</li>
+								<li
+									style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+									<span
+										style="position: absolute; left: 0; color: var(--highlight-color);">•</span>
+									<strong>Autonomie :</strong> 17.5 km par charge
+								</li>
+								<li
+									style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+									<span
+										style="position: absolute; left: 0; color: var(--highlight-color);">•</span>
+									<strong>Batterie :</strong> 400g, charge rapide (0 à 50%
+									en 35 min)
+								</li>
+								<li
+									style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+									<span
+										style="position: absolute; left: 0; color: var(--highlight-color);">•</span>
+									<strong>Puissance :</strong> 800W, couple de 32 N·m
+								</li>
+								<li
+									style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+									<span
+										style="position: absolute; left: 0; color: var(--highlight-color);">•</span>
+									<strong>Poids total :</strong> 1.8 kg (batterie incluse)
+								</li>
+							</ul>
+						</div>
+						<div style="flex: 1; min-width: 300px;">
+							<h4 style="color: var(--highlight-color); margin-bottom: 15px;">
+								Applications et cas d'usage</h4>
+							<ul style="list-style: none; padding: 0;">
+								<li
+									style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+									<span
+										style="position: absolute; left: 0; color: var(--highlight-color);">•</span>
+									<strong>Exploration nature :</strong> Boost de 40% de la
+									force des jambes pour explorer jungles, déserts et
+									montagnes
+								</li>
+								<li
+									style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+									<span
+										style="position: absolute; left: 0; color: var(--highlight-color);">•</span>
+									<strong>Photographie professionnelle :</strong>
+									Compensation jusqu'à 30kg d'équipement lourd
+								</li>
+								<li
+									style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+									<span
+										style="position: absolute; left: 0; color: var(--highlight-color);">•</span>
+									<strong>Randonnée :</strong> Réduction de l'effort
+									physique de 30% pour franchir des distances plus
+									importantes
+								</li>
+								<li
+									style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+									<span
+										style="position: absolute; left: 0; color: var(--highlight-color);">•</span>
+									<strong>Sports :</strong> Amélioration des performances
+									dans diverses activités physiques
+								</li>
+								<li
+									style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+									<span
+										style="position: absolute; left: 0; color: var(--highlight-color);">•</span>
+									<strong>Vie quotidienne :</strong> Assistance pour la
+									marche, le travail et les loisirs
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="hypershell-impact reveal-element"
+					style="margin: 40px 0; background-color: var(--accent-color); padding: 30px; border-radius: 10px;">
+					<h4 style="color: var(--highlight-color); margin-bottom: 20px; text-align: center;">
+						Impact et perspectives d'avenir</h4>
+
+					<div
+						style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+						<div
+							style="background-color: var(--primary-color); border-radius: 8px; padding: 20px;">
+							<h5 style="color: var(--highlight-color); margin-bottom: 10px;">
+								Amplification humaine</h5>
+							<p>L'Hypershell X représente l'aube d'une nouvelle ère où la
+								technologie portable ne se contente plus de mesurer nos
+								capacités, mais les amplifie activement, repoussant les limites
+								de ce que le corps humain peut accomplir.</p>
+						</div>
+						<div
+							style="background-color: var(--primary-color); border-radius: 8px; padding: 20px;">
+							<h5 style="color: var(--highlight-color); margin-bottom: 10px;">
+								Démocratisation des exosquelettes</h5>
+							<p>Autrefois limités aux applications militaires ou médicales
+								coûteuses, les exosquelettes deviennent désormais accessibles au
+								grand public, ouvrant la voie à de nouvelles possibilités
+								d'utilisation quotidienne.</p>
+						</div>
+						<div
+							style="background-color: var(--primary-color); border-radius: 8px; padding: 20px;">
+							<h5 style="color: var(--highlight-color); margin-bottom: 10px;">
+								Convergence technologique</h5>
+							<p>Ce PowerSuit illustre parfaitement la fusion entre intelligence
+								artificielle, robotique miniaturisée et science des matériaux
+								dans un produit unifié qui s'adapte intimement au corps humain.
+							</p>
+						</div>
+					</div>
+
+					<div style="margin-top: 30px; text-align: center;">
+						<p>Cette technologie ouvre la voie à des innovations futures dans les domaines
+							de l'assistance médicale, du sport de haute performance et de
+							l'augmentation des capacités humaines dans des environnements extrêmes.
+						</p>
+					</div>
+				</div>
+
+				<div class="hypershell-cta reveal-element" style="text-align: center; margin-top: 40px;">
+					<a href="https://eu.hypershell.tech/fr-fr/products/hypershell-x" target="_blank"
+						rel="noopener noreferrer" class="cta-btn">Découvrir l'Hypershell X</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Section -->
+	<section id="contact">
+		<h2>Contactez-moi</h2>
+		<div class="contact-container">
+			<div class="contact-info reveal-element">
+				<h3>Informations de contact</h3>
+				<div class="contact-item">
+					<div class="contact-icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+							viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+							stroke-linecap="round" stroke-linejoin="round">
+							<path
+								d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+							</path>
+							<polyline points="22,6 12,13 2,6"></polyline>
+						</svg>
+					</div>
+					<span>email@exemple.com</span>
+				</div>
+				<div class="contact-item">
+					<div class="contact-icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+							viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+							stroke-linecap="round" stroke-linejoin="round">
+							<path
+								d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+							</path>
+						</svg>
+					</div>
+					<span>+33 6 12 34 56 78</span>
+				</div>
+				<div class="contact-item">
+					<div class="contact-icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+							viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+							stroke-linecap="round" stroke-linejoin="round">
+							<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+							<circle cx="12" cy="10" r="3"></circle>
+						</svg>
+					</div>
+					<span>Paris, France</span>
+				</div>
+			</div>
+			<div class="contact-form reveal-element">
+				<h3>Envoyez-moi un message</h3>
+				<form id="contact-form">
+					<div class="form-group">
+						<label for="name">Nom</label>
+						<input type="text" id="name" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" id="email" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label for="subject">Sujet</label>
+						<input type="text" id="subject" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label for="message">Message</label>
+						<textarea id="message" class="form-control" required></textarea>
+					</div>
+					<button type="submit" class="submit-btn">Envoyer</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<div class="social-links">
+			<a href="#" class="social-link">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<path
+						d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z" />
+				</svg>
+			</a>
+			<a href="#" class="social-link">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<path
+						d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z" />
+				</svg>
+			</a>
+			<a href="#" class="social-link">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<path
+						d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" />
+				</svg>
+			</a>
+			<a href="#" class="social-link">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<path
+						d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+				</svg>
+			</a>
+		</div>
+		<p>&copy; 2023 Mon Portfolio. Tous droits réservés.</p>
+	</footer>
+	<script src="javascript.js"></script>
 </body>
+
 </html>
