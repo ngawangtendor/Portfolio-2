@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapport de Stage - Association Augustine au Shell Eco-Marathon</title>
+    <style>
+        /* Variables pour les couleurs */
+        :root {
+            --primary-color: #1a1a2e;
+            --secondary-color: #16213e;
+            --accent-color: #0f3460;
+            --highlight-color: #e94560;
+            --text-color: #f1f1f1;
+            --text-secondary: #b0b0b0;
+        }
+
+        /* Styles de base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem 10%;
+            background-color: rgba(26, 26, 46, 0.9);
+       
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-color);
+            text-decoration: none;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo::before {
+            content: '<';
+            color: var(--highlight-color);
+            margin-right: 5px;
+        }
+
+        .logo::after {
+            content: '/>';
+            color: var(--highlight-color);
+            margin-left: 5px;
+        }
+
+        .return-btn {
+            padding: 0.5rem 1rem;
+            background-color: var(--highlight-color);
+            color: var(--text-color);
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            border: 2px solid var(--highlight-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .return-btn:hover {
+            background-color: transparent;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(233, 69, 96, 0.3);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 120px auto 0;
+            padding: 2rem;
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 1.5rem;
+            position: relative;
+            color: var(--highlight-color);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 0.5rem;
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--highlight-color);
+            border-radius: 4px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 2.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            margin-top: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        ul, ol {
+            margin-bottom: 1.5rem;
+            margin-left: 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .image-container {
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .tech-section {
+            margin: 3rem 0;
+        }
+
+        .tech-item {
+            background-color: var(--accent-color);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tech-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .tech-item h3 {
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .tech-image {
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+
+        .tech-image img {
+            max-width: 100%;
+            max-height: 200px;
+            border-radius: 8px;
+        }
+
+        .language-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2rem 0;
+            justify-content: center;
+        }
+
+        .language-item {
+            text-align: center;
+            flex: 0 0 150px;
+        }
+
+        .language-image {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 1rem;
+            background-color: var(--secondary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .language-image img {
+            max-width: 60%;
+            max-height: 60%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            color: var(--text-secondary);
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 1.5rem;
+                margin-top: 100px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            header {
+                padding: 1rem 5%;
+            }
+
+            .language-container {
+                gap: 1rem;
+            }
+
+            .language-item {
+                flex: 0 0 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">Ngawang</a>
+        <a href="index.html#parcours" class="return-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5"></path>
+                <path d="M12 19l-7-7 7-7"></path>
+            </svg>
+            Retour au portfolio
+        </a>
+    </header>
+
+    <div class="container">
+        <h1>Stage Augustine</h1>
+        
+        <h2>Présentation de l'association Augustine</h2>
+        <div class="image-container">
+            <img src="image/logo-augustine.png" alt="Association Augustine">
+        </div>
+        <p>Augustine est un projet de véhicule électrique développé par des étudiants et des professeurs du Lycée Léonard de Vinci. L'objectif est de parcourir une distance d'environ 30 km en consommant le moins d'énergie possible, afin de remporter le challenge.</p>
+        
+        <h2>Shell Eco-marathon</h2>
+        <div class="image-container">
+            <img src="image/shell-eco-marathon.jpg" alt="Shell Eco-marathon">
+        </div>
+        <p>Le Shell Eco-marathon est une compétition internationale qui défie les étudiants de concevoir, construire et piloter des véhicules économes en énergie. L'objectif est de parcourir la plus grande distance possible avec une quantité limitée d'énergie, en mettant l'accent sur l'innovation et l'efficacité énergétique. Les participants utilisent diverses sources d'énergie, telles que l'électricité, l'hydrogène et les carburants conventionnels, pour propulser leurs véhicules. Cette compétition encourage la collaboration entre étudiants et professionnels, tout en promouvant les technologies durables et l'innovation dans le domaine des transports.</p>
+        
+        <h2>Mission durant le stage</h2>
+        <p>Notre mission consistait à réaliser l'interface de la page web d'Augustine pour permettre aux visiteurs de découvrir et de présenter l'association. J'ai développé la section Galerie, qui permet à l'administrateur de la page web de déposer des images qui s'affichent automatiquement sur le site.</p>
+        
+        <h2>Logiciels utilisés :</h2>
+        
+        <div class="tech-section">
+            <div class="tech-item">
+                <h3>Pelican</h3>
+                <div class="tech-image">
+                    <img src="image/pelican.png" alt="Pelican">
+                </div>
+                <p>Un générateur de sites statiques en Python. Il convertit des fichiers Markdown ou reStructuredText en HTML, permettant de créer des sites web rapides et sécurisés sans base de données. Idéal pour les blogs et les sites documentaires, Pelican est apprécié pour sa simplicité et sa flexibilité.</p>
+            </div>
+            
+            <div class="tech-item">
+                <h3>Pillow</h3>
+                <div class="tech-image">
+                    <img src="image/pillow.png" alt="Pillow">
+                </div>
+                <p>Une bibliothèque Python permettant de manipuler et de traiter des images. Elle offre des fonctionnalités pour ouvrir, modifier et enregistrer divers formats d'images, facilitant ainsi le développement d'applications nécessitant des opérations graphiques.</p>
+            </div>
+            
+            <div class="tech-item">
+                <h3>HTML, CSS, JavaScript</h3>
+                <p>Les technologies fondamentales utilisées pour structurer, styliser et rendre interactif le contenu web.</p>
+                
+                <div class="language-container">
+                    <div class="language-item">
+                        <div class="language-image">
+                            <img src="image/html.png" alt="HTML">
+                        </div>
+                        <p>HTML</p>
+                    </div>
+                    
+                    <div class="language-item">
+                        <div class="language-image">
+                            <img src="image/css.jpeg" alt="CSS">
+                        </div>
+                        <p>CSS</p>
+                    </div>
+                    
+                    <div class="language-item">
+                        <div class="language-image">
+                            <img src="image/javas.png" alt="JavaScript">
+                        </div>
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Résultat du site</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin: 2rem 0;">
+            <div style="flex: 1; min-width: 300px;">
+                <div class="image-container">
+                    <img src="image/galerie-date.png" alt="Résultat du site Augustine - Page d'accueil">
+                </div>
+            </div>
+            <div style="flex: 1; min-width: 300px;">
+                <div class="image-container">
+                    <img src="image/galerie.png" alt="Résultat du site Augustine - Galerie">
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="index.html#parcours" class="return-btn" style="display: inline-flex;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 12H5"></path>
+                    <path d="M12 19l-7-7 7-7"></path>
+                </svg>
+                Retour au portfolio
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Ngawang - Rapport de stage - Association Augustine</p>
+    </footer>
+</body>
+
+</html>

@@ -77,7 +77,7 @@ header {
 	width: 100%;
 	padding: 1rem 10%;
 	background-color: rgba(26, 26, 46, 0.9);
-	backdrop-filter: blur(5px);
+	
 	z-index: 1000;
 	display: flex;
 	justify-content: space-between;
@@ -816,6 +816,175 @@ footer {
 	fill: var(--text-color);
 }
 
+
+/* Modal de base */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    position: relative;
+    background-color: var(--secondary-color);
+    margin: 50px auto;
+    padding: 0;
+    width: 80%;
+    max-width: 1000px;
+    max-height: 85vh;
+    overflow-y: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    animation: slideIn 0.4s ease;
+}
+
+.modal-header {
+    padding: 20px;
+    background-color: var(--accent-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.modal-header h2 {
+    margin: 0;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.modal-header::after {
+    content: none;
+}
+
+.close-modal {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-modal:hover {
+    color: var(--highlight-color);
+}
+
+.modal-body {
+    padding: 20px 30px 30px;
+}
+
+/* Contenu spécifique au rapport */
+.rapport-section h3 {
+    font-size: 2rem;
+    color: var(--highlight-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.rapport-section h4 {
+    font-size: 1.5rem;
+    color: var(--highlight-color);
+    margin: 25px 0 15px;
+}
+
+.rapport-section p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.rapport-image-container {
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.rapport-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.tech-item {
+    background-color: var(--accent-color);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.tech-image {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+}
+
+.tech-image img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.tech-description {
+    padding: 20px;
+}
+
+.tech-description h5 {
+    font-size: 1.2rem;
+    color: var(--highlight-color);
+    margin-bottom: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsivité */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+    }
+    
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
 /* Animations */
 @keyframes fadeInDown {
 	from {
@@ -935,3 +1104,161 @@ footer {
 		left: 0;
 	}
 }
+/* Ajoutez ce code à la fin de votre fichier style.css */
+
+/* Modal styles */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1500;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.8);
+	opacity: 0;
+	transition: opacity 0.3s ease;
+   }
+   
+   .modal.show {
+	display: block;
+	opacity: 1;
+   }
+   
+   .modal-content {
+	background-color: var(--primary-color);
+	margin: 5% auto;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	width: 80%;
+	max-width: 1000px;
+	max-height: 90vh;
+	overflow-y: auto;
+	transform: translateY(-50px);
+	opacity: 0;
+	transition: all 0.4s ease;
+   }
+   
+   .modal.show .modal-content {
+	transform: translateY(0);
+	opacity: 1;
+   }
+   
+   .modal-header {
+	padding: 2rem;
+	position: relative;
+	border-bottom: 1px solid var(--accent-color);
+   }
+   
+   .modal-header h2 {
+	color: var(--highlight-color);
+	margin: 0;
+	text-align: center;
+   }
+   
+   .modal-header h2::after {
+	content: '';
+	position: absolute;
+	bottom: 1.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 80px;
+	height: 4px;
+	background-color: var(--highlight-color);
+	border-radius: 4px;
+   }
+   
+   .modal-body {
+	padding: 2rem;
+   }
+   
+   .modal-close {
+	position: absolute;
+	right: 20px;
+	top: 15px;
+	color: var(--text-secondary);
+	font-size: 2rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	z-index: 10;
+   }
+   
+   .modal-close:hover {
+	color: var(--highlight-color);
+	transform: scale(1.1);
+   }
+   
+   /* Report content styles */
+   .report-section {
+	margin-bottom: 3rem;
+   }
+   
+   .report-section h3 {
+	color: var(--highlight-color);
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+   }
+   
+   .report-image-container {
+	width: 100%;
+	margin-bottom: 1.5rem;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+   }
+   
+   .report-image {
+	width: 100%;
+	display: block;
+	transition: transform 0.3s ease;
+   }
+   
+   .report-image:hover {
+	transform: scale(1.02);
+   }
+   
+   .report-tools {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 2rem;
+	margin-top: 1.5rem;
+   }
+   
+   .report-tool {
+	background-color: var(--accent-color);
+	border-radius: 8px;
+	padding: 1.5rem;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+   }
+   
+   .report-tool:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   }
+   
+   .report-tool h4 {
+	color: var(--highlight-color);
+	margin: 1rem 0;
+	font-size: 1.2rem;
+   }
+   
+   .report-tool-image {
+	width: 100%;
+	height: auto;
+	border-radius: 4px;
+   }
+   
+   @media screen and (max-width: 768px) {
+	.modal-content {
+	    width: 95%;
+	    margin: 10% auto;
+	}
+	
+	.report-tools {
+	    grid-template-columns: 1fr;
+	}
+   }
